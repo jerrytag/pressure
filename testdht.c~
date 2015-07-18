@@ -1,0 +1,14 @@
+#include "dht.h"
+#include <stdio.h>
+#include "bcm2835.h"
+
+int main(){
+    bcm2835_init();
+    float t ,h;
+    printf("xxc");
+  while(1){  
+   readDHT(22,4,t,h);
+  printf("123%0.2f,%0.2f"t,h);
+  } 
+    return 0;
+}
